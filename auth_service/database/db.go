@@ -12,7 +12,7 @@ import (
 
 
 // var client *mongo.Client
-// var userCollection *mongo.Collection
+var  UserCollection *mongo.Collection
 
 func Loadenv()string{
 	err := godotenv.Load(".env")
@@ -30,7 +30,14 @@ func Connect()*mongo.Client{
 	if err != nil {
 		log.Fatal(err)
 		}
+		UserCollection =client.Database("users_service").Collection("user_auth")
 		return client
 		
 
 }
+// func GetCollection() *mongo.Collection {
+// 	client := Connect()
+// 	// Return the collection from the database
+// 	collection := client.Database("users_service").Collection("user_auth")
+// 	return collection
+// }
