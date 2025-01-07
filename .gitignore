@@ -1,0 +1,46 @@
+# Go binary files
+/bin/
+/build/
+/out/
+
+# Dependency directories (vendor is commonly used for vendoring Go dependencies)
+vendor/
+
+# Compiled object files, archives, and executables
+*.a
+*.o
+*.out
+*.exe
+*.test
+
+# Go workspace files
+go.work
+go.work.sum
+
+# IDE/Editor folders
+.idea/
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Environment variable files (e.g., for local development)
+.env*
+.env.local
+.env.production
+.env.test
+
+# Go modules cache
+/go/pkg/
+
+# Log files
+*.log
+
+# Coverage files
+*.coverprofile
+coverage.out
+
+# Temporary files
+*.tmp
+*.swp
